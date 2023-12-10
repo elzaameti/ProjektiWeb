@@ -118,3 +118,38 @@ h3{
     font-weight: 600;
     margin: 10px 0;
 }
+.AboutUs{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+.AboutUs-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    
+}
+.AboutUs-col img{
+    width: 100%;
+    
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+h3{
+    color:black;
+}
