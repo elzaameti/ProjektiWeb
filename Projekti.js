@@ -1,5 +1,25 @@
 const users = [];
 
+document.getElementById('login-btn').addEventListener('click', toggleLoginForm);
+document.getElementById('signup-btn').addEventListener('click', toggleSignupForm);
+
+function toggleLoginForm() {
+    console.log('toggleLoginForm executed');
+    const loginFormContainer = document.getElementById('login-form-container');
+    const signupFormContainer = document.getElementById('signup-form-container');
+
+    loginFormContainer.style.display = 'block';
+    signupFormContainer.style.display = 'none';
+}
+
+function toggleSignupForm() {
+    console.log('toggleSignupForm executed');
+    const loginFormContainer = document.getElementById('login-form-container');
+    const signupFormContainer = document.getElementById('signup-form-container');
+
+    loginFormContainer.style.display = 'none';
+    signupFormContainer.style.display = 'block';
+}
 function login() {
     const username = document.getElementById('login-username').value;
     const password = document.getElementById('login-password').value;
