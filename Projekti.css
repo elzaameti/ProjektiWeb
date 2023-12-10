@@ -76,6 +76,26 @@ nav button a{
     color:whitesmoke;
     font-size: 16px;
 }
+.text-box h1{
+    font-size: 32px;
+    color: whitesmoke;
+    margin-left: 40px;
+}
+.text-box h2{
+    font-size: 25px;
+    color: whitesmoke;
+    margin-left: 40px;
+}
+.text-box h3{
+    font-size: 36px;
+    color: whitesmoke;
+    margin-left: 230px;
+}
+.text-box h4{
+    font-size: 32px;
+    color: whitesmoke;
+    margin-left: 50px;
+}
 .Services{
     width: 80%;
     margin: auto;
@@ -160,7 +180,6 @@ nav button a{
 }
 
 .form-container {
-    display: none;
     width: 100%;
     max-width: 400px;
     margin: 20px auto;
