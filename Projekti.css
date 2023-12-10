@@ -83,13 +83,13 @@ nav button a{
     
 
 }
-h1{
+.Services h1{
     font-size: 36px;
     font-weight: 600;
     margin-top: 0px;
 
 }
- p{
+ .Services p{
     color: black;
     font-size: 14px;
     font-weight: 300;
