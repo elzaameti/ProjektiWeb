@@ -152,4 +152,24 @@ h3{
 }
 h3{
     color:black;
+}.footer{
+    
+    background-color: black;          
+    padding:100px;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+}
+.ibm-img1{
+    width: 105px;
+    height: 40px;
+
+
+   
+    
+  
 }
