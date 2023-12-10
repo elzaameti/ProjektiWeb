@@ -4,6 +4,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+}
     
     body{
         margin: 0;
@@ -13,7 +14,7 @@
         text-decoration: none;
         scroll-behavior: smooth;
     }
-}
+
 .header{
     min-height: 100vh;
     width: 100%;
@@ -83,7 +84,7 @@ nav button a{
     
 
 }
-h1{
+.Services h1{
     font-size: 36px;
     font-weight: 600;
     margin-top: 0px;
