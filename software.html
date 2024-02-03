@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software</title>
+    <link rel="stylesheet" href="Projekti.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 5px;
+        }
+
+        .navbar-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-list li {
+            margin: 0 10px;
+        }
+
+        .navbar-list a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .home2 {
+            text-align: center;
+            padding: 20px;
+            background-color: #ddd;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        main h1 {
+            color: #333;
+        }
+
+        main p {
+            color: #555;
+        }   
+        main img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="Projekti.html" class="logo-link">
+        <img class="logo" src="fototProjekt/provim.png" alt="logo IBM black">
+    </a>
+    <nav>
+        <ul class="navbar-list">
+            <li><a href="home" class="home-active">Home</a></li>
+            <a href="products.html">Products</a>
+                <li><a href="software.html">Software</a></li>
+            <li><a href="see more">See more</a></li>
+    </nav>
+    <a href="#" class="btn">Sign in</a>
+</header>
+<section class="home2" id="homedy">
+<span> Software items </span>
+</section>
+<main>
+    <?php
+    require_once 'config.php';
+    
+    // Fetch data from the database
+    $sql = "SELECT * FROM produktet WHERE kategorite_id = 1"; 
+    $result = $conn->query($sql);
+    
+    // Static content
+    echo '
+        <img src="fototProjekt/item1Software.webp" alt="PowerHA image">
+        <h1>PowerHA</h1>
+        <p>Here is the description of the PowerHA product.</p>
+        <img src="fototProjekt/item2.png" alt="PowerSC image">
+        <h1>PowerSC</h1>
+        <p>here is the description of the powerSC product</p>
+        <img src="fototProjekt/item3.jpg" alt="PowerVC image">
+        <h1>PowerVC</h1>
+        <p>here is the description of PowerVC product </p>
+    ';
+    
+    while ($row = $result->fetch_assoc()) {
+        echo '
+            <img src="fototProjekt/' . $row['image_filename'] . '" alt="' . htmlspecialchars($row['name']) . '">
+            <h1>' . htmlspecialchars($row['name']) . '</h1>
+            <p>' . htmlspecialchars($row['description']) . '</p>
+        ';
+    }
+    
+    // Close the PHP block properly
+    $conn->close();
+    ?>        
+</main>
+</body>
+</html>
