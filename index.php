@@ -202,3 +202,39 @@ body {
                 </div>
             </div>
         </section>
+        <footer>
+
+        <div class="footer">
+         <a href="index.html">
+         <img class="ibm-img1" src="images/IBM1.png" alt="IBM logo white">
+         </a>
+         <div class =footer-content>
+           <h2>Contact us</h2>
+           <br>
+           <p>Email:info@ibm.net</p>
+           <p>Phone:+1-212-456-7890</p>
+           <p>Adress:1 Orchard Road, Armonk, New York</p>
+         </div>
+           <div class="footer-content">
+             <h2>Support</h2>
+             <br>
+             <p>Privacy Policy</p>
+             <p>Help</p>
+             <p>Feedback</p>
+           </div>
+           <div class="footer-content">
+             <h2>Follow Us</h2>
+             <br>
+            <a href="https://www.facebook.com/IBM" target="_blank"> <i class='bx bxl-facebook-circle' style="font-size: 2rem; color: #fff;"></i></a>
+                <a href="https://www.instagram.com/ibm/" target="_blank"><i class='bx bxl-instagram' style="font-size: 2rem; color: #fff;"></i></a>
+                 <a href="https://www.linkedin.com/company/ibm" target="_blank"><i class='bx bxl-linkedin-square' style="font-size: 2rem; color: #fff;"></i></a>
+                 <hr>
+                 <h3>&copy; 2023 IBM.All Rights Reserved</h3>
+           </div>
+        </div> 
+     
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>       
+</body>
+</html>
