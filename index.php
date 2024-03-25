@@ -180,3 +180,25 @@ body {
             </div>
         </div>
     </section>
+    <section id="news" class="News">
+            <h1>Latest News</h1>
+            <div class="news-container">
+                <div class="news-article">
+                    <img src="images/1.jpg" alt="News 1 Image">
+                    <h2>The importance of diversity in AI isn’t opinion, it’s math</h2>
+                    <br>
+                    <br>
+                    <p> We all want to see our ideal human values reflected in our technologies. We expect technologies such as artificial intelligence (AI) 
+                        to not lie to us, to not discriminate, and to be safe for us and our children to use.Today, IBM is announcing that it has signed
+                         a definitive agreement to acquire application modernization capabilities</p>
+                </div>
+        
+                <div class="news-article">
+                    <img src="images/2.jpg" alt="News 2 Image">
+                    <h2>IBM to Acquire Application Modernization Capabilities from Advanced</h2>
+                    <br>
+                    <p> IBM is announcing that it has signed a definitive agreement to acquire Modern Systems 
+                        and other application modernization capabilities from Advanced, bringing a combination of talent, tools...</p>
+                </div>
+            </div>
+        </section>
