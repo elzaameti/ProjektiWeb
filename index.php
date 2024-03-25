@@ -78,3 +78,40 @@ body {
            <button> <a href="signin.html" class="button">Sign In</a>
         </div>
     </header>
+    <section class="home swiper" id="home">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide container">
+                    <img src="images/foto1.jpg" alt="">
+                    <div class="home-text">
+                        <span><strong>Unlock the power of AIOps</strong></span>
+                        <h1></h1>
+                        <i class='bx bx-chevrons-down'></i>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div> 
+                <!-- Slide 2 -->
+                <div class="swiper-slide container">
+                    <img src="images/foto2.jpeg" alt="">
+                    <div class="home-text">
+                        <span><strong>What is IBM Cloud Pak for AIOps?</strong></span>
+                        <h1></h1>
+                        <i class='bx bx-chevrons-down'></i>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div> 
+                <!-- Slide 3 -->
+                <div class="swiper-slide container">
+                    <img src="images/foto3.jpg" alt="">
+                    <div class="home-text">
+                        <span><strong>Discover how to achieve proactive IT operations with IBM Cloud Pak for AIOps</strong></span>
+                        <h1></h1>
+                        <i class='bx bx-chevrons-down'></i>
+                        <a href="#" class="btn">See more</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
